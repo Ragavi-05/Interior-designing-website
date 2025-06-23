@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Place Order - Interior Design</title>
+  <style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  background-image: url(img7.jpg);
+  overflow: hidden;
+}
+
+.form-container {
+  width: 90%;
+  max-width: 500px;
+  background: transparent;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  /* box-shadow: 0 10px 20px rgba(0,0,0,0.1); */
+}
+
+h2 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: 500;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ecd1d1;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background:rgba(117, 76, 7, 0.382);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  
+}
+
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>For Booking</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your email address" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Your contact number" required>
+
+      <label for="service">Select Service</label>
+      <select id="service" required>
+        <option value="">--Choose a service--</option>
+        <option value="residential">Residential Interior</option>
+        <option value="commercial">Commercial Interior</option>
+        <option value="modular">Modular Kitchen</option>
+        <option value="renovation">Renovation</option>
+      </select>
+
+      <label for="details">Project Details</label>
+      <textarea id="details" placeholder="Describe your project..." rows="2" required></textarea>
+      <div class="ragavan">
+      <button type="submit">confirm Booking</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
